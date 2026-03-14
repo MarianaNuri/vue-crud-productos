@@ -15,7 +15,7 @@ Ver catálogo
 
 </div>
 
-<div class="integrantes">
+<footer class="integrantes">
 
 <h2>Integrantes del equipo</h2>
 
@@ -25,7 +25,7 @@ Ver catálogo
 <li>Yazmin Guadalupe chacón Hernández </li>
 </ul>
 
-</div>
+</footer>
 
 
 </template>
