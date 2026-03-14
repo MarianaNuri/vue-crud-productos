@@ -10,7 +10,11 @@ const productoStore = useProductoStore()
 
 <div class="contenedor">
 
-<h1 class="titulo">Catálogo de Plantas</h1>
+<h1 class="titulo">🌿 Catálogo de Plantas</h1>
+
+<p class="subtitulo">
+Descubre plantas perfectas para decorar tu hogar
+</p>
 
 <div class="grid">
 
@@ -24,14 +28,12 @@ v-for="producto in productoStore.productos"
 
 <h2>{{ producto.nombre }}</h2>
 
-<p class="precio">
-$ {{ producto.precio }}
-</p>
+<p class="precio">$ {{ producto.precio }}</p>
 
 <div class="botones">
 
-<button class="btn agregar">
-Agregar al carrito
+<button class="btn comprar">
+Agregar
 </button>
 
 <button class="btn editar">
@@ -58,73 +60,83 @@ Eliminar
 max-width:1200px;
 margin:auto;
 padding:40px;
-font-family:Segoe UI;
+text-align:center;
 }
 
 .titulo{
-text-align:center;
-margin-bottom:30px;
+font-size:40px;
+color:#2e7d32;
+}
+
+.subtitulo{
+color:#666;
+margin-bottom:40px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:30px;
 }
 
 .card{
 background:white;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+border-radius:15px;
 padding:20px;
-text-align:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
 }
 
 .imagen{
 width:100%;
-height:180px;
+height:200px;
 object-fit:cover;
-border-radius:8px;
+border-radius:10px;
+margin-bottom:10px;
 }
 
 .precio{
 font-size:18px;
 font-weight:bold;
-margin:10px 0;
+color:#2e7d32;
 }
 
 .botones{
 display:flex;
 justify-content:center;
 gap:8px;
-flex-wrap:wrap;
+margin-top:10px;
 }
 
 .btn{
-padding:6px 10px;
+padding:8px 12px;
 border:none;
 border-radius:6px;
 cursor:pointer;
+font-size:13px;
 }
 
-.agregar{
-background:#42b883;
+.comprar{
+background:#4caf50;
 color:white;
 }
 
 .editar{
-background:#3498db;
+background:#2196f3;
 color:white;
 }
 
 .eliminar{
-background:#e74c3c;
+background:#e53935;
 color:white;
+}
+
+.btn:hover{
+opacity:0.8;
 }
 
 </style>
