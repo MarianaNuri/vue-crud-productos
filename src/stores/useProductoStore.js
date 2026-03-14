@@ -7,58 +7,58 @@ productos: [
 
 {
 id:1,
-nombre:"Laptop Gamer",
-precio:18000,
-imagen:"https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+nombre:"Monstera Deliciosa",
+precio:350,
+imagen:"https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
 },
 
 {
 id:2,
-nombre:"Mouse Gamer",
-precio:600,
-imagen:"https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+nombre:"Suculenta Echeveria",
+precio:120,
+imagen:"https://images.unsplash.com/photo-1466692476868-aef1dfb1e735"
 },
 
 {
 id:3,
-nombre:"Teclado Mecánico",
-precio:1200,
-imagen:"https://images.unsplash.com/photo-1518770660439-4636190af475"
+nombre:"Cactus Decorativo",
+precio:150,
+imagen:"https://images.unsplash.com/photo-1509423350716-97f2360af2e4"
 },
 
 {
 id:4,
-nombre:"Monitor 27 pulgadas",
-precio:5200,
-imagen:"https://images.unsplash.com/photo-1587829741301-dc798b83add3"
+nombre:"Helecho",
+precio:200,
+imagen:"https://images.unsplash.com/photo-1502082553048-f009c37129b9"
 },
 
 {
 id:5,
-nombre:"Audífonos Gamer",
-precio:1500,
-imagen:"https://images.unsplash.com/photo-1518443895914-6a1b43c0a3a2"
+nombre:"Planta Serpiente",
+precio:280,
+imagen:"https://images.unsplash.com/photo-1598887142487-9a3c1a3a5a4d"
 },
 
 {
 id:6,
-nombre:"Webcam HD",
-precio:900,
-imagen:"https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+nombre:"Pothos",
+precio:180,
+imagen:"https://images.unsplash.com/photo-1604762512526-7a29e2a87277"
 },
 
 {
 id:7,
-nombre:"Tablet",
-precio:6500,
-imagen:"https://images.unsplash.com/photo-1542751110-97427bbecf20"
+nombre:"Ficus Lyrata",
+precio:420,
+imagen:"https://images.unsplash.com/photo-1604762524889-3e2fcc145683"
 },
 
 {
 id:8,
-nombre:"Celular",
-precio:12000,
-imagen:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+nombre:"Lavanda",
+precio:160,
+imagen:"https://images.unsplash.com/photo-1508780709619-79562169bc64"
 }
 
 ]

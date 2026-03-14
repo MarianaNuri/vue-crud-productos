@@ -2,12 +2,13 @@
 
 <div class="inicio">
 
-  <h1>Tienda de Productos</h1>
+<h1>Tienda VerdeVida</h1>
 
-  <p>
-    Bienvenido a la aplicación CRUD de productos desarrollada con Vue 3,
-    Vue Router y Pinia.
-  </p>
+<p>
+Bienvenido al catálogo de plantas. Aquí podrás explorar
+diferentes especies disponibles para decorar tu hogar.
+</p>
+
 
   <router-link to="/productos">
     Ver productos
