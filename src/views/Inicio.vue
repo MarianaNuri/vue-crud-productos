@@ -22,7 +22,7 @@ Ver catálogo
 <ul>
 <li>Mariana Chávez Nuricumbo</li>
 <li>Eva del Carmen González Sántiz</li>
-<li>Yazmin Guadalupe chacón Hernández </li>
+<li>Yazmin Guadalupe Chacón Hernández </li>
 </ul>
 
 </footer>

@@ -85,6 +85,10 @@ border-radius:15px;
 padding:20px;
 box-shadow:0 6px 15px rgba(0,0,0,0.1);
 transition:0.3s;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:360px; /* mantener alturae para las tarjetas */
 }
 
 .card:hover{
@@ -94,10 +98,17 @@ transform:translateY(-8px);
 .imagen{
 width:100%;
 height:200px;
+max-height:200px;
 object-fit:cover;
 border-radius:10px;
 margin-bottom:10px;
 }
+
+/*  imágenes no se agranden y siempre tengan tamaño fijo */
+.imagen, .imagen[src] {
+min-height:200px;
+}
+
 
 .precio{
 font-size:18px;
