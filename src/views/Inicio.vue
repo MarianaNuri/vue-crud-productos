@@ -66,13 +66,18 @@ background:#388e3c;
 }
 
 .integrantes{
-margin-top:60px;
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+max-width:100%;
+margin:0;
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 10px rgba(0,0,0,0.08);
-width:300px;
+padding:18px 12px;
+box-shadow:0 -3px 10px rgba(0,0,0,0.08);
 text-align:center;
+border-radius:0;
+z-index:10;
 }
 
 .integrantes h2{
@@ -83,6 +88,7 @@ margin-bottom:10px;
 .integrantes ul{
 list-style:none;
 padding:0;
+margin:0;
 }
 
 .integrantes li{
