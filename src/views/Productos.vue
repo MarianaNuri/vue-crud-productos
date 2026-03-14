@@ -10,7 +10,7 @@ const productoStore = useProductoStore()
 
 <div class="contenedor">
 
-<h1 class="titulo">🌿 Catálogo de Plantas</h1>
+<h1 class="titulo">Catálogo de Plantas</h1>
 
 <p class="subtitulo">
 Descubre plantas perfectas para decorar tu hogar
