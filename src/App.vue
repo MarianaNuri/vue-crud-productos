@@ -11,21 +11,24 @@
 <router-link to="/productos">Plantas</router-link>
 
 <router-link to="/carrito">Carrito </router-link>
-
 </nav>
 
 </header>
-
+<main class="contenido">
 <router-view/>
+</main>
 
 </template>
 
 <style>
-
 body{
 margin:0;
 font-family: 'Segoe UI', sans-serif;
 background:#f5f7f5;
+}
+
+.contenido {
+    width: 100%;
 }
 
 .navbar{

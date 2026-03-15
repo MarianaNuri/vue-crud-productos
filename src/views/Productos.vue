@@ -72,10 +72,10 @@ Eliminar
 <style>
 
 .contenedor{
+width: 100%;
 max-width:1200px;
 margin:auto;
-padding:40px;
-text-align:center;
+padding:40px 20px;
 }
 
 .titulo{
@@ -102,10 +102,12 @@ margin-bottom: 20px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
+width: 100%;
 }
 
 .card{
 background:white;
+width: 100%;
 border-radius:15px;
 padding:20px;
 box-shadow:0 6px 15px rgba(0,0,0,0.1);
@@ -141,6 +143,7 @@ color:#2e7d32;
 
 .botones{
 display:flex;
+flex-wrap: wrap;
 justify-content:center;
 gap:8px;
 margin-top:10px;
@@ -152,6 +155,8 @@ border:none;
 border-radius:6px;
 cursor:pointer;
 font-size:13px;
+text-decoration: none;
+display: inline-block;
 }
 
 .comprar{
@@ -172,5 +177,4 @@ color:white;
 .btn:hover{
 opacity:0.8;
 }
-
 </style>
