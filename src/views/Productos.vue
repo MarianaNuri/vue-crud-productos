@@ -2,7 +2,6 @@
 
 import { useProductoStore } from "../stores/useProductoStore"
 
-<<<<<<< HEAD
 // IMPORTAMOS EL STORE DEL CARRITO
 import { useCarritoStore } from "../stores/useCarritoStore"
 
@@ -11,10 +10,6 @@ const productoStore = useProductoStore()
 // CREAMOS LA INSTANCIA DEL CARRITO
 const carritoStore = useCarritoStore()
 
-=======
-const productoStore = useProductoStore()
-
->>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
 </script>
 
 <template>
@@ -43,16 +38,12 @@ v-for="producto in productoStore.productos"
 
 <div class="botones">
 
-<<<<<<< HEAD
 <!-- BOTÓN PARA AGREGAR AL CARRITO -->
 <!-- cuando se presiona, se manda el producto al store del carrito -->
 <button 
 class="btn comprar"
 @click="carritoStore.agregarAlCarrito(producto)"
 >
-=======
-<button class="btn comprar">
->>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
 Agregar
 </button>
 
@@ -108,11 +99,7 @@ transition:0.3s;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
-<<<<<<< HEAD
 min-height:360px;
-=======
-min-height:360px; /* mantener alturae para las tarjetas */
->>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
 }
 
 .card:hover{
@@ -128,10 +115,6 @@ border-radius:10px;
 margin-bottom:10px;
 }
 
-<<<<<<< HEAD
-=======
-/*  imágenes no se agranden y siempre tengan tamaño fijo */
->>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
 .imagen, .imagen[src] {
 min-height:200px;
 }
@@ -176,8 +159,4 @@ color:white;
 opacity:0.8;
 }
 
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
