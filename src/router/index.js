@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router"
 
+<<<<<<< HEAD
 // Importación de las vistas principales de la aplicación
 import Inicio from "../views/Inicio.vue"
 import Productos from "../views/Productos.vue"
@@ -10,6 +11,11 @@ import Productos from "../views/Productos.vue"
 // para eliminar productos o vaciar el carrito.
 import Carrito from "../views/Carrito.vue"
 
+=======
+import Inicio from "../views/Inicio.vue"
+import Productos from "../views/Productos.vue"
+
+>>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
 const routes = [
 
   {
@@ -22,6 +28,7 @@ const routes = [
     path: "/productos",
     name: "Productos",
     component: Productos
+<<<<<<< HEAD
   },
 
   // -----------------------------
@@ -35,6 +42,8 @@ const routes = [
     path: "/carrito",
     name: "Carrito",
     component: Carrito
+=======
+>>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
   }
 
 ]
