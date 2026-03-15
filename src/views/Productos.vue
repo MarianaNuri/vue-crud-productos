@@ -22,6 +22,10 @@ const carritoStore = useCarritoStore()
 Descubre plantas perfectas para decorar tu hogar
 </p>
 
+<router-link to="/productos/crear" class="btn crear">
+    + Nueva planta
+</router-link>
+
 <div class="grid">
 
 <div
@@ -82,6 +86,16 @@ color:#2e7d32;
 .subtitulo{
 color:#666;
 margin-bottom:40px;
+}
+
+.crear {
+background: #2e7d32;
+color: white;
+padding: 10px 15px;
+border-radius: 6px;
+text-decoration: none;
+display: inline-block;
+margin-bottom: 20px;
 }
 
 .grid{

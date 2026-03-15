@@ -6,7 +6,7 @@ import {useProductoStore} from "../stores/useProductoStore"
 const productoStore = useProductoStore()
 const route = useRoute()
 const router = useRouter()
-const id = route.params.id
+const id = Number(route.params.id)
 
 const nombre = ref("")
 const precio = ref("")
@@ -14,7 +14,7 @@ const imagen = ref("")
 
 onMounted(() => {
   if(id) {
-    const producto = productoStore.productos.find(p => p.id == id)
+    const producto = productoStore.obtenerProductoPorId(id)
 
     if(producto) {
       nombre.value = producto.nombre
@@ -28,14 +28,14 @@ function guardarProducto(){
   const producto = {
     id: id ? id: Date.now(),
     nombre: nombre.value,
-    precio: precio.value,
+    precio: Number(precio.value),
     imagen: imagen.value
   }
 
   if(id) {
-    productoStore.actualizarProducto(producto)
+    productoStore.actualizarProducto(id, producto)
   } else {
-    productoStore.agregarProducto(producto)
+    productoStore.crearProducto(producto)
   }
   router.push("/productos")
 }
@@ -58,7 +58,7 @@ function guardarProducto(){
       <label>Imagen (URL)</label>
       <input v-model="imagen">
 
-      <button class="btnGuardar">Guardar</button>
+      <button class="btn guardar">Guardar</button>
 
     </form>
   </div>
@@ -66,29 +66,29 @@ function guardarProducto(){
 
 <style>
 .contenedor {
-  max-width: 500px;
-  margin: auto;
-  padding: 30px;
+max-width: 500px;
+margin: auto;
+padding: 30px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 input {
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+padding: 8px;
+border-radius: 6px;
+border: 1px solid #ccc;
 }
 
 .guardar { 
-  background: #4caf50;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+background: #4caf50;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
 }
 </style>
