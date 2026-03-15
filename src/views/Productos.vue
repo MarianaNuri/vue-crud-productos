@@ -47,11 +47,11 @@ class="btn comprar"
 Agregar
 </button>
 
-<button class="btn editar">
+<router-link :to="`/productos/${producto.id}`"class="btn editar">
 Editar
-</button>
+</router-link>
 
-<button class="btn eliminar">
+<button class="btn eliminar" @click="productoStore.eliminarProducto(producto.id)">
 Eliminar
 </button>
 
