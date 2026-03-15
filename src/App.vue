@@ -2,7 +2,7 @@
 
 <header class="navbar">
 
-<h1 class="logo">VerdeVida</h1>
+<router-link to="/" class="logo">VerdeVida</router-link>
 
 <nav class="menu">
 
@@ -39,6 +39,15 @@ box-shadow:0 2px 8px rgba(0,0,0,0.1);
 
 .logo{
 color:#2e7d32;
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
+cursor: pointer;
+}
+
+.logo:hover {
+transform: scale(1.05);
+transition: 0.2s;
 }
 
 .menu{
