@@ -95,7 +95,6 @@ this.productos = this.productos.filter(p=>p.id !== id)
 getters:{
 obtenerProductoPorId:(state)=>(id)=>{
 return state.productos.find(p=>p.id === id)
-<<<<<<< HEAD
 },
 
 // -----------------------------
@@ -114,9 +113,6 @@ return state.carrito
 : 0
 }
 
-=======
-}
->>>>>>> 8ac1598a5a775375a8e3effab193de7754c7627a
 }
 
 })

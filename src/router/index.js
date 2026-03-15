@@ -9,6 +9,7 @@ import Productos from "../views/Productos.vue"
 // el total de productos, el precio total y los botones
 // para eliminar productos o vaciar el carrito.
 import Carrito from "../views/Carrito.vue"
+import FormularioProd from "../views/ProductoForm.vue"
 
 const routes = [
 
@@ -35,6 +36,17 @@ const routes = [
     path: "/carrito",
     name: "Carrito",
     component: Carrito
+  },
+  {
+    path: "/productos/crear",
+    name: "Crear producto",
+    component: FormularioProd
+  },
+  {
+    path: "/productos/:id",
+    name: "Editar producto",
+    component: FormularioProd,
+    props: true
   }
 
 ]
@@ -44,7 +56,6 @@ const router = createRouter({
   // Se usa HashHistory para que funcione correctamente
   // cuando el proyecto se publique en GitHub Pages
   history: createWebHashHistory(),
-
   routes
 })
 
