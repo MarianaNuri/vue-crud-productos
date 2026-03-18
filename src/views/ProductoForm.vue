@@ -11,6 +11,10 @@ const id = Number(route.params.id)
 const nombre = ref("")
 const precio = ref("")
 const imagen = ref("")
+const errores = ref({
+  nombre: "",
+  precio: ""
+})
 
 onMounted(() => {
   if(id) {
@@ -25,6 +29,24 @@ onMounted(() => {
 })
 
 function guardarProducto(){
+  /*Validaciones para que los campos no queden vacias */
+  errores.value.nombre = ""
+  errores.value.precio = ""
+
+  let valido = true
+
+  if(!nombre.value) {
+    errores.value.nombre = "El nombre es obligatorio"
+    valido = false
+  }
+
+  if(!precio.value) {
+    errores.value.precio = "El precio es obligatorio"
+    valido = false
+  }
+
+  if (!valido) return
+
   const producto = {
     id: id ? id: Date.now(),
     nombre: nombre.value,
@@ -44,16 +66,19 @@ function guardarProducto(){
 <template>
 
   <div class="contenedor">
+
     <h1 v-if="id">Editar producto</h1>
     <h1 v-else>Crear producto</h1>
 
 
     <form @submit.prevent="guardarProducto">
       <label>Nombre</label>
-      <input v-model="nombre" required>
+      <input v-model="nombre" :class="{invalido: errores.nombre}">
+      <small v-if="errores.nombre" class="error">{{ errores.nombre }}</small>
 
       <label>Precio</label>
-      <input type="number" v-model="precio" required>
+      <input type="number" v-model="precio" :class="{invalido: errores.precio}">
+      <small v-if="errores.precio" class="error">{{ errores.precio }}</small>
 
       <label>Imagen (URL)</label>
       <input v-model="imagen">
@@ -81,6 +106,15 @@ input {
 padding: 8px;
 border-radius: 6px;
 border: 1px solid #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.invalido {
+  border: 1px solid red;
 }
 
 .guardar { 
