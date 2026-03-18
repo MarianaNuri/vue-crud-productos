@@ -99,10 +99,9 @@ margin-bottom: 20px;
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-width: 100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap:30px;
 }
 
 .card{

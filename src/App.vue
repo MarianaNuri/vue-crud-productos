@@ -70,12 +70,16 @@ color:#2e7d32;
 
 .contenido {
 width: 100%;
-display: block;
+  max-width: 1200px;
+  margin: auto;
 }
 
 #app{
-display:block;
 width:100%;
+}
+
+body{
+  width: 100%;
 }
 
 </style>
