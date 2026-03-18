@@ -68,4 +68,14 @@ font-weight:500;
 color:#2e7d32;
 }
 
+.contenido {
+width: 100%;
+display: block;
+}
+
+#app{
+display:block;
+width:100%;
+}
+
 </style>
