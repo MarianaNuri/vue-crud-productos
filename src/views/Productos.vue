@@ -72,11 +72,13 @@ Eliminar
 <style>
 
 .contenedor{
-width: 100%;
-max-width:1200px;
-margin:auto;
-padding:40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: block; 
 }
+
 
 .titulo{
 font-size:40px;
@@ -98,10 +100,12 @@ display: inline-block;
 margin-bottom: 20px;
 }
 
-.grid{
-display:grid;
-grid-template-columns: repeat(3, 1fr);
-gap:30px;
+.grid {
+  display: grid !important; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .card{
