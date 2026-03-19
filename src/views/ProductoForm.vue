@@ -91,7 +91,8 @@ function guardarProducto(){
 
 <style>
 .contenedor {
-max-width: 500px;
+width: 100%;
+max-width: 600px;
 margin: auto;
 padding: 30px;
 }
@@ -100,12 +101,14 @@ form {
 display: flex;
 flex-direction: column;
 gap: 10px;
+width: 100%;
 }
 
 input {
 padding: 8px;
 border-radius: 6px;
 border: 1px solid #ccc;
+width: 100%;
 }
 
 .error {
