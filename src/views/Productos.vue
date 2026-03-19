@@ -71,95 +71,111 @@ Eliminar
 
 <style>
 
-.contenedor{
-  width: 100%;
+.contenedor {
+width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; 
   padding: 40px 20px;
-  display: block; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  
 }
 
-
-.titulo{
-font-size:40px;
-color:#2e7d32;
+.titulo {
+  font-size: 40px;
+  color: #2e7d32;
+  margin-bottom: 10px;
 }
 
-.subtitulo{
-color:#666;
-margin-bottom:40px;
-}
-
-.crear {
-background: #2e7d32;
-color: white;
-padding: 10px 15px;
-border-radius: 6px;
-text-decoration: none;
-display: inline-block;
-margin-bottom: 20px;
+.subtitulo {
+  color: #666;
+  margin-bottom: 30px;
 }
 
 .grid {
-  display: grid !important; 
-  grid-template-columns: repeat(3, 1fr); 
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(250px, 1fr)) !important;
+  justify-content: center;
   gap: 30px;
   width: 100%;
-  margin-top: 20px;
+  max-width: 980px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card{
-background:white;
-width: 100%;
-border-radius:15px;
-padding:20px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-min-height:360px;
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
 }
 
-.card:hover{
-transform:translateY(-8px);
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.imagen{
-width:100%;
-height:200px;
-max-height:200px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:10px;
+.card {
+  /*background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;*/
+background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+ 
 }
 
-.imagen, .imagen[src] {
-min-height:200px;
+.card:hover {
+  transform: translateY(-8px);
 }
 
-.precio{
-font-size:18px;
-font-weight:bold;
-color:#2e7d32;
+.imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.botones{
-display:flex;
-flex-wrap: wrap;
-justify-content:center;
-gap:8px;
-margin-top:10px;
+.precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin: 10px 0;
 }
 
-.btn{
-padding:8px 12px;
-border:none;
-border-radius:6px;
-cursor:pointer;
-font-size:13px;
-text-decoration: none;
-display: inline-block;
+.botones {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 5px; 
+  margin-top: auto; 
+  padding-top: 15px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: #157f1a;
 }
 
 .comprar{

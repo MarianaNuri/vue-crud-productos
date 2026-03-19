@@ -25,10 +25,12 @@ body{
 margin:0;
 font-family: 'Segoe UI', sans-serif;
 background:#f5f7f5;
+
 }
 
 .contenido {
     width: 100%;
+    
 }
 
 .navbar{
@@ -68,10 +70,6 @@ font-weight:500;
 color:#2e7d32;
 }
 
-.contenido {
-width: 100%;
-  margin: auto;
-}
 
 #app{
 width:100%;
